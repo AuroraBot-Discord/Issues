@@ -9,7 +9,7 @@ body:
     value: Issueを開く前に重複していないか([Issue一覧](https://github.com/AuroraBot-Discord/Issues/issues))を確認してね
 - type: textarea
   attributes:
-    label: エラーID
+    label: "エラーID"
     description: |
       出てきたエラーIDをここにそのまま貼り付けてください。(基本17〜19桁の数字)ない場合、バグなのでバグのIssueを立ててください。
   validations:
@@ -18,7 +18,7 @@ body:
   attributes:
     label: あなたの環境
     description: |
-      なんのクライアントを使っていたか教えて下さい。
+      "なんのクライアントを使っていたか教えて下さい。"
     options:
       - "Windows(アプリ)"
       - "Mac(アプリ)"
@@ -30,19 +30,19 @@ body:
     required: true
 - type: textarea
   attributes:
-    label: あなたは何をしましたか？
+    label: "あなたは何をしましたか？"
     description: |
       Markdownなどを使用して、なんのコマンドを実行したか、何をしたかを書いてください。
   validations:
     required: true
 - type: textarea
   attributes:
-    label: 開発者用エラーメッセージを貼り付けてください。
+    label: "開発者用エラーメッセージを貼り付けてください。"
     description: |
       埋め込みの中にある開発者用エラーメッセージを貼り付けてくれるとエラーの特定が早くなります。
   validations:
     required: false
 - type: textarea
   attributes:
-    label: その他
+    label: "その他"
     description: なにか書きたいことがあればどうぞ。
