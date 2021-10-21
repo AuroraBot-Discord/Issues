@@ -1,0 +1,48 @@
+name: "❎ Botを使っている際に起こったエラー"
+description: "Botを使っているときの「予期しないエラーが発生しました」を報告してください"
+title: "[エラー] エラー内容を入力してね"
+labels:
+  - エラー
+body:
+- type: markdown
+  attributes:
+    value: Issueを開く前に重複していないか([Issue一覧](https://github.com/AuroraBot-Discord/Issues/issues))を確認してね
+- type: textarea
+  attributes:
+    label: エラーID
+    description: |
+      出てきたエラーIDをここにそのまま貼り付けてください。(基本17〜19桁の数字)ない場合、バグなのでバグのIssueを立ててください。
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: あなたの環境
+    description: |
+      なんのクライアントを使っていたか教えて下さい。
+    options:
+      - "Windows(アプリ)"
+      - "Mac(アプリ)"
+      - "iOS(iPhone、iPadなど)"
+      - "Android"
+      - "ブラウザ"
+      - Other
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: あなたは何をしましたか？
+    description: |
+      Markdownなどを使用して、なんのコマンドを実行したか、何をしたかを書いてください。
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: 開発者用エラーメッセージを貼り付けてください。
+    description: |
+      埋め込みの中にある開発者用エラーメッセージを貼り付けてくれるとエラーの特定が早くなります。
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: その他
+    description: なにか書きたいことがあればどうぞ。
